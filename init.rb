@@ -115,9 +115,11 @@
 # 5.0.7  
 #       - yet another patch to please Zeitwerk
 # 5.0.8  
-#       - fixed File.exists? to File.exist? in zippy
+#       - fixed File.exist? to File.exist? in zippy
 #       - fixed URI.esacape to URI.encode_www_form_component for zippy
 #       - fixed long standing issue with links in zippy's inline zip file content tables
+# 5.0.9
+#       - supports Redmine 6
 
 #-----------------------------------------------------------------------------------------
 # Register plugin
@@ -126,7 +128,7 @@ Redmine::Plugin.register :redmine_more_previews do
   name         'Redmine More Previews'
   author       'Stephan Wenzel'
   description  'Preview various file types in redmine\'s preview pane'
-  version      '5.0.8'
+  version      '5.0.9'
   url          'https://github.com/HugoHasenbein/redmine_more_previews'
   author_url   'https://github.com/HugoHasenbein/redmine_more_previews'
   
@@ -195,4 +197,3 @@ Rails.application.config.after_initialize do
   end
 end
 
-ActiveSupport::Dependencies.explicitly_unloadable_constants += ['RedmineMorePreviews'] 

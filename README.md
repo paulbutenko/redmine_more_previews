@@ -142,8 +142,11 @@ Native speakers: please help to improve localizations
 
 ### Change-Log* 
 
+**5.0.9**
+  - supports Redmine 6
+
 **5.0.8**  
-  - fixed File.exists? to File.exist?
+  - fixed File.exist? to File.exist?
   - fixed URI.esacape to URI.encode\_www\_form\_component for zippy
   - fixed long standing issue with links in zippy's inline zip file content tables
         
